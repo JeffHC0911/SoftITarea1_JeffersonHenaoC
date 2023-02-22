@@ -27,6 +27,8 @@ public class Carpeta {
                     || archivo.getName().equals(".json") || archivo.getName().endsWith(".xml")) {
                 Archivo a = new Archivo(archivo.getPath());
                 archivosCarpeta.add(a);
+            }else{
+                System.out.println("No se encontraron archivo de texto en la carpeta");
             }
         }
     }
